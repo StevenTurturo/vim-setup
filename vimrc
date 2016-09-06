@@ -99,6 +99,9 @@ au BufNewFile,BufRead *.js, *.html, *.css:
 
 au BufRead,BufNewFile *.py, *.pyw, *.c, *.h match BadWhitespace /\s\+$/
 
+au BufRead,BufNewFile *.rb, *.yml:
+    \ set tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
+
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
